@@ -62,8 +62,18 @@ You can comment out each HelloWorld piece of code, if any one of the three are m
 
 # Tasks
 
-1. Modify the Header component in src/components: change the text and background color, then render it on App.vue (remember the three steps above!)
+1. Modify the Header component in src/components: change the title text and background color, then render it on App.vue (remember the three steps above!)
 
-I have set a default color on this header, but there are many ways to change it! For example it is currently `color="#0083cb"`, which is a Hex color code. You can use this [site](https://htmlcolorcodes.com/) to find a color you like!
+I have set a default color on this header, but there are many ways to change it! For example the R2 blue color is `color="#0083cb"`, which is a Hex color code. You can use this [site](https://htmlcolorcodes.com/) to find a color you like! You can also use default colors such as 'black', 'blue', but a hex color reference is the best practice as you'd typically be given this Hex color from the lead designer
+
+Depending on the color of your header, you might need to change the color of the title text using CSS to make it more readable! I have created an id for you: `#header-title` and referenced it in the `<style></style>` tag. You need to figure out how to change the font color using CSS (hint: use Google!)
+
+Once you've done the above, congratulations! With a few lines of code you've created your first Navigation bar and [Single Page Web Application](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
+
+`v-app-bar` and `v-toolbar-title` are pre-made Vuetify components that we also made use of, you can read the documentation about them [here](https://vuetifyjs.com/en/components/app-bars/) and see what other parameters we can add. Additionally, using the documentation, the website can generate the code we need! Try changing the Elevation and color in the demo on the documentation page
 
 2. Create a Footer component, change it's color, and render it on App.vue (you can use the Header as reference for the code)
+
+Right click on the components folder, select new file, and name it Footer.vue
+
+Then, create a `<template></template>` tag, and beneath that create a `<style></style>` tag
