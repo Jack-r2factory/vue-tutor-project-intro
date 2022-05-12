@@ -21,9 +21,19 @@ npm init @vitejs/app tutor-project -- --template vue
 cd tutor-project
 npm i
 npm run dev
-cd tutor-project
+```
+
+Once the above commands are run the terminal is now hosting our server, and we can copy the Local link to be taken to our local server. We now need to open another terminal and navigate back to our folder:
+
+```
+cd vue-tutor-project-intro/tutor-project
 vue add vuetify
 Vite Preview (Vuetify 3 + Vite)
+```
+
+Now go back the original terminal and run the below commands:
+
+```
 Close server, ctrl + c
 npm run dev
 ```
