@@ -21,7 +21,7 @@ npm i
 npm run dev
 ```
 
-This will clone the project down, install it, and host it on your local server. We then need to open another terminal and follow these commands:
+This will clone the project down, install it, and host it on your local server. Click on the link or navigate to http://localhost:3000/ on your web browser. We then need to open another terminal and follow these commands:
 
 ```
 cd vue-tutor-project-intro/tutor-project
