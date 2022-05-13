@@ -3,14 +3,14 @@
     <v-main>
       <Header />
       <Title />
-      <HelloWorld />
+      <!-- <HelloWorld /> -->
       <Footer />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Title from "./components/Title.vue";
@@ -19,7 +19,7 @@ export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    // HelloWorld,
     Header,
     Footer,
     Title,
