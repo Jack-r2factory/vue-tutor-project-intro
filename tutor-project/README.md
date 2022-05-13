@@ -219,3 +219,37 @@ img {
 ```
 
 Solve the width and height problem by setting their values to 300px each (this will work for the demo image used above since it is a square, if you've used a different image you might to change the width and height to be more rectangle)
+
+<br></br>
+
+6. **Add PieChart to App.vue: change chart data**
+
+You may have noticed that a pre-existing component called PieChart.vue in the src/components folder. I have pre-written this component for you, your tasks are:
+
+- Change the chart title labels to be something else
+- Change the chart data to be something else
+- Change the background color of the chart segments
+
+I have intentionally not highlighted what specifically needs to be changed, this is so that you can get used to reading JavaScript. Good programmers write variables with explicit names!
+
+Note that the component works in such a way that there has to be an equal number of labels and data points! When you're changing the color you'll notice that we're setting the colors usng rgba rather than the Hex codes we mentioned earlier. Research rgba color codes and change the values as you like!
+
+<br></br>
+
+# Conclusion
+
+By completing this project you can:
+
+1. Fork a project
+2. Clone a project
+3. Install a project and run it on a local server
+4. Understand App.vue and the basic overview of how Vue interacts with the bedrock HTML
+5. How to call components on App.vue
+6. Modify a pre-existing component, setting its text and color format (Header.vue)
+7. Create a brand new component, settings its text and color, as well as modify a pre-existing JavaScript function (Footer.vue)
+8. Comment out boilerplate code, and do some basic styling (Title.vue)
+9. Dynamically call data on a component (About.vue)
+10. Display and style an image inside of a component using CSS (About.vue)
+11. Render a piechart on App.vue and modify a complex JavaScript function (PieChart.vue)
+
+This is just the surface of Vue but it's an excellent start. Next we'll cover things like routing (directing to different web pages within our app), how to store sensitive information such as login details, and how to pass that information around the app using props/emissions
