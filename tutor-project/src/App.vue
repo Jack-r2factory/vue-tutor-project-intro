@@ -5,6 +5,7 @@
       <Title />
       <!-- <HelloWorld /> -->
       <About />
+      <PieChart />
       <Footer />
     </v-main>
   </v-app>
@@ -16,6 +17,7 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Title from "./components/Title.vue";
 import About from "./components/About.vue";
+import PieChart from "./components/PieChart.vue";
 
 export default {
   name: "App",
@@ -26,6 +28,7 @@ export default {
     Footer,
     Title,
     About,
+    PieChart,
   },
 
   data: () => ({
