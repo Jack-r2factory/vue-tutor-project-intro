@@ -111,4 +111,44 @@ This allows us to specifically target and style just that div (divider). Work ou
 
 4. **Create an About component in src/components: place it below the Title component**
 
-Create a new component called About.vue, and create a template tag, followed by a`<script></script>` tag, and follow that with a style tag. Inside of the template create a html paragraph tag
+Create a new component called About.vue, and create a template tag, followed by a`<script></script>` tag, and follow that with a style tag
+
+Inside of the template create a `<div></div>` and give it an id called about-container. Then, inside of that div, create a html paragraph tag and leave it blank. The reason we're leaving it blank is because we're going to make use of the Vue data() function!
+
+Inside of the script tag, paste the following code:
+
+```JavaScript
+export default {
+    data() {
+        return {
+          message: 'Your text here'
+        }
+    }
+}
+```
+
+Because we're inside of the script tag, we're executing JavaScript. Inside of Vue there is a pre-made function called data(), as the name suggests this is a place where we can store data locally and pass it around our application (we won't cover that in great detail here, but instead focus on passing data within the component).
+
+Above I created a key inside of the data object that has the value of 'Your text here'. You can replace the text inside of the quotes with whatever you like. Now, inside of the paragraph tag we created earlier we want to call our message key, we do this by using _double-moustache syntax_:
+
+```JavaScript
+{{ message }}
+```
+
+If you hit save, you should see the message text (value) appear on the web page! We have successfully passed data within the component. This is a basic example so let's give it some context. Imagine you just logged into Amazon, in the header it will typically display your name in the top right, how has it done this?
+
+Behind the scences Amazon has called your data from their server, and are rendering on the webpage. The actual code will look something like this:
+
+```JavaScript
+export default {
+    data() {
+        return {
+          username: 'Atlas Sproson'
+        }
+    }
+}
+```
+
+We use this method of setting of passing data around because it allows the data to be _dynamic_! If we just wrote our names in the p tag directly it wouldn't scale, meaning it would be hard-coded to my name and would never display yours! But using dynamic data we can a single source of truth!
+
+Next we need to align the text to the center again, just like we did Title.vue
