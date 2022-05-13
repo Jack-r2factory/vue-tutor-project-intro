@@ -84,6 +84,8 @@ The next step is rendering the footer on the webpage, don't forget the three ste
 
 You'll notice the code we copied calls a function to display the current year, with some text next to it that is 'strong' (bold). Feel free to change this text if you want to. Additionally, just as we set the color in the header we can do the same for the footer here! Note: in header we modified v-app-bar to set the color, in this instance we modify v-footer to change the color. We always target the Vuetify wrapper if we want to set a background color for something
 
+Inside of the first footer tag, paste in this code: `absolute bottom padless width="100%"`, this will ensure that the footer remains at the bottom of the page and spreads across the entire page
+
 Extra credit: Date() is an in-built function that is calling the method getFullYear(), this means that there are many other methods inside of Date() that we can use instead of getFullyear()! Research the JavaScript Date() method and experiment with the other methods
 
 Extra extra credit: if i were to call Date().getDay(), what do you think I would get if I was calling the function on a Monday?
@@ -105,4 +107,8 @@ You'll notice that the text is off to the left. Now create a `<style></style>` t
 }
 ```
 
-This allows us to specifically target and style just that div (divider). Work out how to align the text to the center
+This allows us to specifically target and style just that div (divider). Work out how to align the text to the center!
+
+4. **Create an About component in src/components: place it below the Title component**
+
+Create a new component called About.vue, and create a template tag, followed by a`<script></script>` tag, and follow that with a style tag. Inside of the template create a html paragraph tag
