@@ -90,6 +90,19 @@ Extra extra credit: if i were to call Date().getDay(), what do you think I would
 
 3. **Create an Title component in src/components: remove HelloWorld and add some text**
 
-Create a new vue file as covered above, don't forget to add the template! Next we want to comment out the HelloWorld component on App.vue - but remember, there are 3 instances on App.vue where HelloWorld is mentioned: make sure you comment out all three!
+Create a new vue file as covered above and name it Title.vue, don't forget to add it to the template! Next we want to comment out the HelloWorld component on App.vue - but remember, there are 3 instances on App.vue where HelloWorld is mentioned: make sure you comment out all three!
 
 Inside of the template we want to place a standard HTML title, but... we don't use the `<header></header>` or `<title></title>` tag. Instead we want to use a different tag, you can read about what you need to use and why [here](https://www.socialhive.com.au/blog/2021/june/h1-tags/#:~:text=HTML%20heading%20tags%20are%20used,language%20used%20to%20create%20websites.)
+
+Then, create a `<div id='title'> </div>` and place the tag you created above between the > <
+
+Once this is complete, render it on App.vue like the other components. Make sure it is below the Header component and above the footer component inside of the App.vue template. Feel free to experiment and place it above/below and see what happens!
+
+You'll notice that the text is off to the left. Now create a `<style></style>` tag below the template. Inside here we refer to the div using the id we created like so:
+
+```css
+#title {
+}
+```
+
+This allows us to specifically target and style just that div (divider). Work out how to align the text to the center
