@@ -78,6 +78,10 @@ Once you've done the above, congratulations! With a few lines of code you've cre
 
 Right click on the components folder, select new file, and name it Footer.vue
 
-Then, create a `<template></template>` tag, and beneath that create a `<style></style>` tag. Now you need to a Vuetify footer, you can view the documentation [here](https://vuetifyjs.com/en/components/footer/). However, the documentation has way too much detail, we're only looking for the Vuetify footer tag. Under the Usage title, click on the icon that looks like: <>, this will allow you to view the source code. Remember, we're only looking for the footer tag and nothing else, so you bring over the footer tag!
+Now we need to add a Vuetify footer, you can find the documentation [here](https://vuetifyjs.com/en/components/footer/). Personally, I quite like Padless footer, so we can scroll to that section and click on the icon that looks like: <>, this will allow you to view the source code. Then we can just copy that entire code block and paste it in!
 
-Once you have brought over the Vuetify footer, place some text inside it. Just as we set the color in the header, we can do the same for footer here using the exact same type with `color=""`
+You'll notice that it calls a function to display the current year, with some text next to it that is 'strong' (bold). Feel free to change this text if you want to. Additionally, just as we set the color in the header we can do the for the footer here! Note: in header we modified v-app-bar to set the color, in this instance we modify v-footer to change the color
+
+Extra credit: Date() is an in-built function that is calling the method getFullYear(), this means that there are many other methods inside of Date() that we can use instead of getFullyear()! Research the JavaScript Date() method and experiment with the other methods
+
+Extra extra credit: if i were to call Date().getDay(), what do you think I would get if I was calling the function on a Monday?
