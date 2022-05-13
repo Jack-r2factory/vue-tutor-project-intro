@@ -80,8 +80,16 @@ Right click on the components folder, select new file, and name it Footer.vue
 
 Now we need to add a Vuetify footer, you can find the documentation [here](https://vuetifyjs.com/en/components/footer/). Personally, I quite like Padless footer, so we can scroll to that section and click on the icon that looks like: <>, this will allow you to view the source code. Then we can just copy that entire code block and paste it in!
 
-You'll notice that it calls a function to display the current year, with some text next to it that is 'strong' (bold). Feel free to change this text if you want to. Additionally, just as we set the color in the header we can do the for the footer here! Note: in header we modified v-app-bar to set the color, in this instance we modify v-footer to change the color
+The next step is rendering the footer on the webpage, don't forget the three steps we outlined at the beginning!
+
+You'll notice the code we copied calls a function to display the current year, with some text next to it that is 'strong' (bold). Feel free to change this text if you want to. Additionally, just as we set the color in the header we can do the same for the footer here! Note: in header we modified v-app-bar to set the color, in this instance we modify v-footer to change the color. We always target the Vuetify wrapper if we want to set a background color for something
 
 Extra credit: Date() is an in-built function that is calling the method getFullYear(), this means that there are many other methods inside of Date() that we can use instead of getFullyear()! Research the JavaScript Date() method and experiment with the other methods
 
 Extra extra credit: if i were to call Date().getDay(), what do you think I would get if I was calling the function on a Monday?
+
+3. **Create an Title component in src/components: remove HelloWorld and add some text**
+
+Create a new vue file as covered above, don't forget to add the template! Next we want to comment out the HelloWorld component on App.vue - but remember, there are 3 instances on App.vue where HelloWorld is mentioned: make sure you comment out all three!
+
+Inside of the template we want to place a standard HTML title, but... we don't use the `<header></header>` or `<title></title>` tag. Instead we want to use a different tag, you can read about what you need to use and why [here](https://www.socialhive.com.au/blog/2021/june/h1-tags/#:~:text=HTML%20heading%20tags%20are%20used,language%20used%20to%20create%20websites.)
