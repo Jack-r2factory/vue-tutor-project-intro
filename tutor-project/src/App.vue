@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <Header />
+      <Title />
       <HelloWorld />
       <Footer />
     </v-main>
@@ -12,6 +13,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+import Title from "./components/Title.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     HelloWorld,
     Header,
     Footer,
+    Title,
   },
 
   data: () => ({
