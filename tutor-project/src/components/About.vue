@@ -4,6 +4,11 @@
       {{ message }}
     </p>
   </div>
+  <div id="img-container">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1024px-Vue.js_Logo_2.svg.png?20170919082558"
+    />
+  </div>
 </template>
 
 <script>
@@ -19,5 +24,17 @@ export default {
 <style>
 #about-container {
   text-align: center;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+#img-container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 </style>
